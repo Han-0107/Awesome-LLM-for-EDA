@@ -1,0 +1,8 @@
+exclude:
+  - templates/
+  - publications/
+  - attic/
+  - generate.py
+  - pub.yaml
+  - Makefile
+  - requirements.txt
