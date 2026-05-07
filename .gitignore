@@ -1,0 +1,14 @@
+web-ai4eda/
+awesome-AI4EDA.code-workspace
+
+__pycache__
+*.aux
+*.log
+*.out
+*.pdf
+*.db
+*.shelf.*
+venv
+auto
+.vscode
+**.DS_Store
