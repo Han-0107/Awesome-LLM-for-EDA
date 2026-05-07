@@ -42,7 +42,7 @@ categories_publications:
       heading: "EDA Agents & Automation"
       file: llm_agent.bib
   # file: all.bib
-  group_by_topic: True
+  group_by_topic: False
   sort_bib: True
   include_image: False
   group_by_year: False
