@@ -4,13 +4,10 @@
 </h1>
 Click on section title to see details.
 
-<br>
 {% for type_content in content %}
-
 <h2>
 <a data-toggle="collapse" href="#{{type_content.title_id}}" aria-expanded="false" aria-controls="#{{type_content.title_id}}">
 <i class="fa fa-chevron-right"></i>
-<i class="fa fa-chevron-down"></i>
 {{type_content.title}}
 </a>
 </h2>
