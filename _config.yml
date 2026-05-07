@@ -6,6 +6,7 @@ baseurl: "/Awesome-LLM-for-EDA"
 theme: jekyll-theme-cayman
 
 exclude:
+  - README.md
   - templates/
   - publications/
   - attic/
@@ -13,3 +14,5 @@ exclude:
   - pub.yaml
   - Makefile
   - requirements.txt
+  - build/
+  - attic/
