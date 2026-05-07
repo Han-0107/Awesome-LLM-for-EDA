@@ -31,11 +31,11 @@ cited as
 
 
 ```txt
-@article{chen2023ai4eda,
-  title   = {Awesome AI for EDA: A curated paper list of Artificial Intelligence for Electronic Design Automation studies.},
-  author  = {Chen, Guojin and Mai, Jing and Lin, Yibo and Yu, Bei},
-  journal = {ai4eda.github.io},
-  year    = {2023},
-  url     = {https://ai4eda.github.io/}
+@article{llm4eda,
+  title   = {Awesome LLM for EDA: A curated paper list of Large Language Models for Electronic Design Automation.},
+  author  = {Han, Yaohui},
+  journal = {han-0107.github.io/Awesome-LLM-for-EDA},
+  year    = {2026},
+  url     = {https://han-0107.github.io/Awesome-LLM-for-EDA/}
 }
 ```

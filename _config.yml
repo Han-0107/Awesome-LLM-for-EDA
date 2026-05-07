@@ -1,3 +1,10 @@
+title: "Awesome LLM for EDA"
+description: "A curated paper list of Large Language Models for Electronic Design Automation"
+url: "https://han-0107.github.io"
+baseurl: "/Awesome-LLM-for-EDA"
+
+theme: jekyll-theme-cayman
+
 exclude:
   - templates/
   - publications/
