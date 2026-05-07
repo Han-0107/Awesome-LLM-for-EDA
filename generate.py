@@ -85,7 +85,9 @@ def get_pub_md(context, config):
         #         pub['link'], title)
         title = title.replace("\n", " ")
 
-        assert('_venue' in pub and 'year' in pub)
+        if '_venue' not in pub or 'year' not in pub:
+            print(f"  [WARNING] Skipping '{pub.get('ID', '?')}': missing required field '_venue' or 'year'")
+            return None
         year_venue = "{} {}".format(pub['_venue'], pub['year'])
 
         highlight = 'selected' in pub and pub['selected'].lower() == 'true'
@@ -234,7 +236,9 @@ def get_pub_md(context, config):
                     if sort_bib:
                         topic_pubs = sorted(topic_pubs, key=lambda pub: int(pub['year']), reverse=True)
                     for i, pub in enumerate(topic_pubs):
-                        details += _get_pub_str(pub, prefix, i + 1, include_image=include_image) + sep
+                        result = _get_pub_str(pub, prefix, i + 1, include_image=include_image)
+                        if result is not None:
+                            details += result + sep
                     details += '</table>\n'
             else:
                 details = ""
@@ -244,7 +248,9 @@ def get_pub_md(context, config):
                 if sort_bib:
                     pubs = sorted(pubs, key=lambda pub: int(pub['year']), reverse=True)
                 for i, pub in enumerate(pubs):
-                    details += _get_pub_str(pub, prefix, i + 1, include_image=include_image) + sep
+                    result = _get_pub_str(pub, prefix, i + 1, include_image=include_image)
+                    if result is not None:
+                        details += result + sep
                 details += '</table>\n'
             type_content['details'] = details
             type_content['file'] = category['file']
